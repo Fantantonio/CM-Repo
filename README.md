@@ -9,3 +9,5 @@
 ---
 
 <br>
+
+Il report completo del progetto è visualizzabile qui: [report.pdf](https://github.com/Fantantonio/CM-Repo/blob/master/report.pdf)
