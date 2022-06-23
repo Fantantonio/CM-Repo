@@ -1,0 +1,348 @@
+=========================================
+0
+=========================================
+
+Select index to execute:: (int/reg) 0
+0
+Loaded 2cd13 bytes from file C:\Users\malware\Desktop\MALDOC~1.RAW
+Initialization Complete..
+Max Steps: 2000000
+Using base offset: 0x401000
+Execution starts at file offset d3f
+401d3f  52                              push edx
+401d40  36BD145DDCC8                    ss mov ebp,0xc8dc5d14
+401d46  3F                              aas
+401d47  59                              pop ecx
+401d48  29D1                            sub ecx,edx
+Stepcount 2000001
+
+OPPURE
+
+0
+Loaded 2cd13 bytes from file C:\Users\malware\Desktop\MALDOC~1.RAW
+Memory monitor enabled..
+Memory monitor for dlls enabled..
+Initialization Complete..
+Interactive Hooks enabled
+Max Steps: -1
+Using base offset: 0x401000
+Execution starts at file offset d3f
+401d3f  52                              push edx
+401d40  36BD145DDCC8                    ss mov ebp,0xc8dc5d14
+401d46  3F                              aas
+401d47  59                              pop ecx
+401d48  29D1                            sub ecx,edx
+
+
+401d4a   7AFE                            jp 0x401d4a  vv                 step: 1701641966  foffset: d4a
+eax=0         ecx=0         edx=0         ebx=0
+esp=12fe00    ebp=c8dc5d14  esi=0         edi=0          EFL 44 P Z  (jump taken)
+
+=========================================
+1
+=========================================
+
+Select index to execute:: (int/reg) 1
+1
+Loaded 2cd13 bytes from file C:\Users\malware\Desktop\MALDOC~1.RAW
+Memory monitor enabled..
+Memory monitor for dlls enabled..
+Initialization Complete..
+Interactive Hooks enabled
+Max Steps: 2000000
+Using base offset: 0x401000
+Execution starts at file offset 24d0
+4034d0  794F                            jns 0x403521  vv
+4034d2  849E8B9D74D9                    test [esi-0x268b6275],bl
+4034d8  8F8063EFD469                    pop dword [eax+0x69d4ef63]
+4034de  db C5
+4034df  ED                              in eax,dx
+
+
+
+Stepcount 2000001
+
+Analysis report:
+
+Signatures Found:  None
+No Api were called can not scan for api table...
+
+Memory Monitor Log:
+
+=========================================
+2
+=========================================
+
+Select index to execute:: (int/reg) 2
+2
+Loaded 2cd13 bytes from file C:\Users\malware\Desktop\MALDOC~1.RAW
+Memory monitor enabled..
+Memory monitor for dlls enabled..
+Initialization Complete..
+Interactive Hooks enabled
+Max Steps: -1
+Using base offset: 0x401000
+Execution starts at file offset 2513
+403513  187C07E2                        sbb [edi+eax-0x1e],bh
+403517  13FB                            adc edi,ebx
+403519  8996A3F51AD5                    mov [esi-0x2ae50a5d],edx
+40351f  57                              push edi
+403520  DD27                            frstor [edi]
+
+
+0        error accessing 0xffffffe2 not mapped
+
+0   ???? No memory At Address            step: 0  foffset: 0
+eax=0         ecx=0         edx=0         ebx=0
+esp=12fe00    ebp=12fff0    esi=0         edi=0          EFL 0
+
+
+Stepcount 0
+
+Analysis report:
+
+Signatures Found:  None
+No Api were called can not scan for api table...
+
+Memory Monitor Log:
+
+=========================================
+3
+=========================================
+
+Select index to execute:: (int/reg) 3
+3
+Loaded 2cd13 bytes from file C:\Users\malware\Desktop\MALDOC~1.RAW
+Memory monitor enabled..
+Memory monitor for dlls enabled..
+Initialization Complete..
+Interactive Hooks enabled
+Max Steps: -1
+Using base offset: 0x401000
+Execution starts at file offset 2517
+403517  13FB                            adc edi,ebx
+403519  8996A3F51AD5                    mov [esi-0x2ae50a5d],edx
+40351f  57                              push edi
+403520  DD27                            frstor [edi]
+403522  96                              xchg eax,esi
+
+
+4034d0   794F                            jns 0x403521  vv                step: 958092998  foffset: 24d0
+eax=0         ecx=0         edx=0         ebx=0
+esp=12fdfc    ebp=12fff0    esi=0         edi=0          EFL 44 P Z  (jump taken)
+
+=========================================
+4
+=========================================
+
+Select index to execute:: (int/reg) 4
+4
+Loaded 2cd13 bytes from file C:\Users\malware\Desktop\MALDOC~1.RAW
+Memory monitor enabled..
+Memory monitor for dlls enabled..
+Initialization Complete..
+Interactive Hooks enabled
+Max Steps: 2000000
+Using base offset: 0x401000
+Execution starts at file offset 2519
+403519  8996A3F51AD5                    mov [esi-0x2ae50a5d],edx
+40351f  57                              push edi
+403520  DD27                            frstor [edi]
+403522  96                              xchg eax,esi
+403523  7DAB                            jnl 0x4034d0   ^^
+
+
+
+Stepcount 2000001
+
+Analysis report:
+
+Signatures Found:  None
+No Api were called can not scan for api table...
+
+Memory Monitor Log:
+
+=========================================
+5
+=========================================
+
+Select index to execute:: (int/reg) 5
+5
+Loaded 2cd13 bytes from file C:\Users\malware\Desktop\MALDOC~1.RAW
+Memory monitor enabled..
+Memory monitor for dlls enabled..
+Initialization Complete..
+Interactive Hooks enabled
+Max Steps: 2000000
+Using base offset: 0x401000
+Execution starts at file offset 251d
+40351d  1AD5                            sbb dl,ch
+40351f  57                              push edi
+403520  DD27                            frstor [edi]
+403522  96                              xchg eax,esi
+403523  7DAB                            jnl 0x4034d0   ^^
+
+
+
+Stepcount 2000001
+
+Analysis report:
+
+Signatures Found:  None
+No Api were called can not scan for api table...
+
+Memory Monitor Log:
+
+=========================================
+6
+=========================================
+
+Select index to execute:: (int/reg) 6
+6
+Loaded 2cd13 bytes from file C:\Users\malware\Desktop\MALDOC~1.RAW
+Memory monitor enabled..
+Memory monitor for dlls enabled..
+Initialization Complete..
+Interactive Hooks enabled
+Max Steps: 2000000
+Using base offset: 0x401000
+Execution starts at file offset 2523
+403523  7DAB                            jnl 0x4034d0   ^^
+403525  FA                              cli
+403526  9B                              wait
+403527  23F0                            and esi,eax
+403529  C02B1C                          shr byte [ebx],0x1c
+
+
+
+Stepcount 2000001
+
+Analysis report:
+
+Signatures Found:  None
+No Api were called can not scan for api table...
+
+Memory Monitor Log:
+
+=========================================
+7
+=========================================
+
+Select index to execute:: (int/reg) 7
+7
+Loaded 2cd13 bytes from file C:\Users\malware\Desktop\MALDOC~1.RAW
+Memory monitor enabled..
+Memory monitor for dlls enabled..
+Initialization Complete..
+Interactive Hooks enabled
+Max Steps: 2000000
+Using base offset: 0x401000
+Execution starts at file offset 253e
+40353e  BE5E87F4A3                      mov esi,0xa3f4875e
+403543  50                              push eax
+403544  2D3B2CAF31                      sub eax,0x31af2c3b
+403549  C68FF4CA4D45F0                  mov byte [edi+0x454dcaf4],0xf0
+403550  643A77C2                        cmp dh,fs:[edi-0x3e]
+
+
+403550   error accessing 0x7ffdefc2 not mapped
+
+403550   643A77C2                        cmp dh,fs:[edi-0x3e]            step: 4  foffset: 2550
+eax=ce50d3c5  ecx=0         edx=0         ebx=0
+esp=12fdfc    ebp=12fff0    esi=a3f4875e  edi=0          EFL 85 C P S
+
+403554   21C9                            and ecx,ecx
+403556   EBC8                            jmp 0x403520   ^^
+403558   DB17                            fistl [edi]
+40355a   46                              inc esi
+
+Stepcount 4
+
+Analysis report:
+
+Signatures Found:  None
+No Api were called can not scan for api table...
+
+Memory Monitor Log:
+
+=========================================
+8
+=========================================
+
+Select index to execute:: (int/reg) 8
+8
+Loaded 2cd13 bytes from file C:\Users\malware\Desktop\MALDOC~1.RAW
+Memory monitor enabled..
+Memory monitor for dlls enabled..
+Initialization Complete..
+Interactive Hooks enabled
+Max Steps: -1
+Using base offset: 0x401000
+Execution starts at file offset 2543
+403543  50                              push eax
+403544  2D3B2CAF31                      sub eax,0x31af2c3b
+403549  C68FF4CA4D45F0                  mov byte [edi+0x454dcaf4],0xf0
+403550  643A77C2                        cmp dh,fs:[edi-0x3e]
+403554  21C9                            and ecx,ecx
+
+
+403550   error accessing 0x7ffdefc2 not mapped
+
+403550   643A77C2                        cmp dh,fs:[edi-0x3e]            step: 3  foffset: 2550
+eax=ce50d3c5  ecx=0         edx=0         ebx=0
+esp=12fdfc    ebp=12fff0    esi=0         edi=0          EFL 85 C P S
+
+403554   21C9                            and ecx,ecx
+403556   EBC8                            jmp 0x403520   ^^
+403558   DB17                            fistl [edi]
+40355a   46                              inc esi
+
+Stepcount 3
+
+Analysis report:
+
+Signatures Found:  None
+No Api were called can not scan for api table...
+
+Memory Monitor Log:
+
+=========================================
+9
+=========================================
+
+Select index to execute:: (int/reg) 9
+9
+Loaded 2cd13 bytes from file C:\Users\malware\Desktop\MALDOC~1.RAW
+Memory monitor enabled..
+Memory monitor for dlls enabled..
+Initialization Complete..
+Interactive Hooks enabled
+Max Steps: 2000000
+Using base offset: 0x401000
+Execution starts at file offset 2549
+403549  C68FF4CA4D45F0                  mov byte [edi+0x454dcaf4],0xf0
+403550  643A77C2                        cmp dh,fs:[edi-0x3e]
+403554  21C9                            and ecx,ecx
+403556  EBC8                            jmp 0x403520   ^^
+403558  DB17                            fistl [edi]
+
+
+403550   error accessing 0x7ffdefc2 not mapped
+
+403550   643A77C2                        cmp dh,fs:[edi-0x3e]            step: 1  foffset: 2550
+eax=0         ecx=0         edx=0         ebx=0
+esp=12fe00    ebp=12fff0    esi=0         edi=0          EFL 0
+
+403554   21C9                            and ecx,ecx
+403556   EBC8                            jmp 0x403520   ^^
+403558   DB17                            fistl [edi]
+40355a   46                              inc esi
+
+Stepcount 1
+
+Analysis report:
+
+Signatures Found:  None
+No Api were called can not scan for api table...
+
+Memory Monitor Log:
